@@ -1,4 +1,4 @@
-{% set version = '0.4.2' %}
+{% set version = "0.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/goeveg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/goeveg/goeveg_{{ version }}.tar.gz
-  sha256: ca7bdf0a02a7e2c7aad69e580a50cd4bc31991f8137551c8e5a81703e0f5374d
+  sha256: 7a69c473001bac622eb832694987d7467f3b3e2eb5f8e8a501272ba70757e0b5
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,11 +46,9 @@ test:
 about:
   home: http://github.com/fgoral/goeveg
   license: GPL (>= 2)
-  summary: A collection of functions useful in (vegetation) community analyses and ordinations.
-    Includes automatic species selection for ordination diagrams, species response curves
-    and rank-abundance curves as well as calculation and sorting of synoptic tables.
+  summary: A collection of functions useful in (vegetation) community analyses and ordinations. Includes automatic species selection for ordination diagrams, species response curves and rank-abundance curves as well as calculation and sorting of synoptic tables.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
