@@ -1,4 +1,4 @@
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/goeveg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/goeveg/goeveg_{{ version }}.tar.gz
-  sha256: 1ceb4333d21923cebc4b1ccbf1e1162172e46682208bab5822b323a6e9e1dbc5
+  sha256: 0e49df335f4f8d008b5e6e47ad2b02ace44d9f174bdd5c3f8fad7c9a4c0897e0
 
 build:
   merge_build_host: true  # [win]
