@@ -42,7 +42,7 @@ test:
     - "\"%R%\" -e \"library('goeveg')\""  # [win]
 
 about:
-  home: http://github.com/fgoral/goeveg
+  home: https://github.com/fvlampe/goeveg/
   license: GPL-2.0-or-later
   summary: A collection of functions useful in (vegetation) community analyses and ordinations. Includes automatic species selection for ordination diagrams, species response curves and rank-abundance curves as well as calculation and sorting of synoptic tables.
   license_family: GPL3
