@@ -26,14 +26,12 @@ requirements:
   host:
     - r-base
     - r-hmisc
-    - r-cluster
     - r-fields
     - r-mgcv
     - r-vegan
   run:
     - r-base
     - r-hmisc
-    - r-cluster
     - r-fields
     - r-mgcv
     - r-vegan
@@ -45,10 +43,11 @@ test:
 
 about:
   home: http://github.com/fgoral/goeveg
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: A collection of functions useful in (vegetation) community analyses and ordinations. Includes automatic species selection for ordination diagrams, species response curves and rank-abundance curves as well as calculation and sorting of synoptic tables.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
