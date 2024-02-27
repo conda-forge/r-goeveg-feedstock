@@ -3,9 +3,9 @@ About r-goeveg-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-goeveg-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/fgoral/goeveg
+Home: https://github.com/fvlampe/goeveg/
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Summary: A collection of functions useful in (vegetation) community analyses and ordinations. Includes automatic species selection for ordination diagrams, species response curves and rank-abundance curves as well as calculation and sorting of synoptic tables.
 
