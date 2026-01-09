@@ -1,4 +1,4 @@
-{% set version = "0.7.9" %}
+{% set version = "0.7.10" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/goeveg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/goeveg/goeveg_{{ version }}.tar.gz
-  sha256: b0fa084b422681fd406c55dab137b0156787ee35b98201def5cfe2ad36af0286
+  sha256: 347388cf859763200e353c17cb4b52707e00d6627e34ed29bde22d7534a497ea
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
